@@ -67,7 +67,7 @@ for i in range(len(rows)):
         if carac.isdigit():
             # check for entire number
             chain_of_number += carac
-        elif carac == '.' and chain_of_number != '':
+        elif chain_of_number != '':
             # end of chain of number found. look for adjacents
             if number_is_next_to_symbol(chain_of_number, i, j - 1, rows):
                 print("this one is valid :" + chain_of_number)
