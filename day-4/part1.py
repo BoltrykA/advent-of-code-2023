@@ -15,11 +15,8 @@ for i in range(len(rows)):
     lines_split[1] = lines_split[1].split(' ')
     arrays_without_empty_strings = [[x for x in arr if x != ''] for arr in lines_split]
 
-    current_worth = 0  # Reset current_worth for each card
-
-    # Iterate through each winning number in the first list
+    current_worth = 0
     for winning_card in arrays_without_empty_strings[0]:
-        # Check if the winning number exists in your list of numbers
         if winning_card in arrays_without_empty_strings[1]:
             current_worth += 1
 
